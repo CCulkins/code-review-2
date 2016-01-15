@@ -1,11 +1,35 @@
 #vacationmatch {
   display: none;
 }
+.container {
+  float: left;
+  margin-right: 50px;
+
+}
 
 div {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 li {
   list-style-type: none;
+}
+
+body {
+  background-color: #b0e0e6;
+}
+
+.jumbotron {
+  margin-top: 70px;
+  background-color: #807d8d
+
+}
+button {
+  background-color: #807d8d;
+  float: right;
+}
+
+.row {
+  text-align: center;
+
 }

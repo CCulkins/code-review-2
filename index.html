@@ -9,19 +9,87 @@
    </head>
 
   <body>
-
-
-
     <div class="container">
       <div class="jumbotron">
-     <h1>Find your perfect vacation!</h1>
+     <h1>
+  <span class="glyphicon glyphicon-plane"></span> Find your perfect vacation!</h1>
 
      <p>Please fill out this form to find out which vacation destination is the
-       best fit for you! <strong>Just pull down the drop-down menus for each question, and
+       best fit for you! <br><strong>Just pull down the drop-down menus for each question, and
        choose the answer that best suits your vacation needs.</strong></p>
 </div>
 <div class"container">
      <form id="vacation">
+
+<div class="row">
+  <div class="col-sm-3"
+       <label for="weather"><span class="glyphicon glyphicon-cloud"></span> What type of weather would you prefer?</label><br>
+       <select id="weather">
+         <option value="pick">-Pick One-</option>
+         <option value="weather1" sum:>Warm &amp; Sunny</option>
+         <option value="weather2">Cold &amp; Snowy</option>
+
+       </select>
+</div>
+</div>
+<div class="row">
+    <div class="col-sm-3"
+       <label for="activity"><br><span class="glyphicon glyphicon-glass"></span> Which activity appeals to you the most?</label><br>
+       <select id="activity">
+         <option value="pick">-Pick One-</option>
+         <option value="activity1">Hiking through a Scenic Area</option>
+         <option value="activity2">Hang Gliding</option>
+       </select>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-3"
+       <label for="budget"><br><span class="glyphicon glyphicon-piggy-bank"></span> How much are you willing to spend?</label><br>
+       <select id="budget">
+         <option value="pick">-Pick One-</option>
+         <option value="budget1">$$$</option>
+         <option value="budget2">$</option>
+       </select>
+     </div>
+</div>
+<div class="row">
+    <div class="col-sm-3"
+       <label for="relax"><br><span class="glyphicon glyphicon-sunglasses"></span> How relaxing do you want your vacation to be?</label><br>
+       <select id="relax">
+         <option value="pick">-Pick One-</option>
+         <option value="relax1">Never lift a finger</option>
+         <option value="relax2">Go, go ,go</option>
+
+       </select>
+     </div>
+   </div>
+<div class="row">
+    <div class="col-sm-3"
+       <label for="culture"><br><span class="glyphicon glyphicon-tent"></span> What type of culture are you looking for?</label><br>
+       <select id="culture">
+         <option value="pick">-Pick One-</option>
+         <option value="culture1">Familiar (Western)</option>
+         <option value="culture2">Different Culture</option>
+</select>
+</div>
+</form>
+<button type="submit" class="btn"><br>Find my perfect vacation destination!</button>
+
+
+
+     <div class="row">
+         <div class="col-sm-3"
+     <div id="vacationmatch">
+       <p>Your vacation match is: <span id="match"></span>, Congratulations!</p>
+     </div>
+   </div>
+     </div>
+
+   </div>
+  </body>
+
+
+</html>
 <!-- Oh, dear...
        <label for="weatherQ">What type of weather would you prefer?</label>
        <id="weatherQ">
@@ -68,54 +136,3 @@
 
     <button type="submit" class="btn">Find my perfect vacation destination!</button>
 </select> --->
-
-
-       <label for="weather">What type of weather would you prefer?</label>
-       <select id="weather">
-         <option value="pick">-Pick One-</option>
-         <option value="weather1" sum:>Warm &amp; Sunny</option>
-         <option value="weather2">Cold &amp; Snowy</option>
-
-       </select>
-
-       <label for="activity">Which activity appeals to you the most?</label>
-       <select id="activity">
-         <option value="pick">-Pick One-</option>
-         <option value="activity1">Hiking through a Scenic Area</option>
-         <option value="activity2">Hang Gliding</option>
-       </select>
-
-       <label for="budget">How much are you willing to spend?</label>
-       <select id="budget">
-         <option value="pick">-Pick One-</option>
-         <option value="budget1">$$$</option>
-         <option value="budget2">$</option>
-       </select>
-
-       <label for="relax">How relaxing do you want your vacation to be?</label>
-       <select id="relax">
-         <option value="pick">-Pick One-</option>
-         <option value="relax1">Never lift a finger</option>
-         <option value="relax2">Go, go ,go</option>
-
-       </select>
-
-       <label for="culture">What type of culture are you looking for?</label>
-       <select id="culture">
-         <option value="pick">-Pick One-</option>
-         <option value="culture1">Familiar (Western)</option>
-         <option value="culture2">Different Culture</option>
-</select>
-<button type="submit" class="btn">Find my perfect vacation destination!</button>
-
-     </form>
-
-     <div id="vacationmatch">
-       <p>Your vacation match is: <span id="match"></span>, Congratulations!</p>
-     </div>
-
-   </div>
-  </body>
-
-
-</html>
