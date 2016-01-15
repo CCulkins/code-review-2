@@ -2,7 +2,7 @@
 <html>
   <head>
      <meta charset="utf-8">
-     <title>Epicodus Wiki</title>
+     <title>Vacation Generator</title>
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/main.css">
      <script src="js/jquery-1.12.0.min.js"></script>
@@ -14,44 +14,99 @@
      <h1>Find your perfect vacation!</h1>
 
      <p>Please fill out this form to find out which vacation destination is the
-       best fit for you!</p>
+       best fit for you! <strong>In the designated answer box, enter the numerical
+         value that is next to your preferred answer in the drop-down.</strong></p>
 
      <form id="vacation">
+       <div class="question">
+       <label for="weather">What type of weather would you prefer?</label>
+       <id="weather">
+         <li>[3] Warm &amp; Sunny</li>
+         <li>[2] Middle/Don't Care</li>
+         <li>[1] Cold &amp; Snowy</li>
+         <input id="weatherText" type="text">
+       </select>
+      </div>
+
+      <div class="question">
+       <label for="activity">Which activity appeals to you the most?</label>
+       <id="activity">
+         <li>[3] Hiking through a Scenic Area</li>
+         <li>[2] Hang Gliding</li>
+         <li>[1] Attending a Festival</li>
+         <input id="activityText" type="text">
+       </select>
+     </div>
+
+     <div class="question">
+       <label for="budget">How much are you willing to spend?</label>
+       <id="budget">
+         <li>[3] $$$</li>
+         <li>[2] $$</li>
+         <li>[1] $</li>
+         <input id="budgetText" type="text">
+       </select>
+     </div>
+
+     <div class="question">
+       <label for="relax">How relaxing do you want your vacation to be?</label>
+       <id="relax">
+         <li>[3] Never lift a finger</li>
+         <li>[2] Go, go ,go</li>
+         <li>[1] Middle/Don't Care</li>
+         <input id="relaxText" type="text">
+       </select>
+     </div>
+
+     <div class="question">
+       <label for="culture">What type of culture are you looking for?</label>
+       <id="culture">
+         <li>[3] Familiar (Western)</li>
+         <li>[2] Middle/Don't Care</li>
+         <li>[1] Different Culture</li>
+         <input id="cultureText" type="text">
+       </select>
+     </div>
+
+<!-- Oh, dear...
 
        <label for="weather">What type of weather would you prefer?</label>
        <select id="weather">
-         <option value="warm">Warm &amp; Sunny</option>
-         <option value="cold">Cold &amp; Snowy</option>
-         <option value="mid">Middle/Don't Care</option>
+         <option value="sum1" sum:>Warm &amp; Sunny</option>
+         <option value="sum2">Middle/Don't Care</option>
+         <option value="sum3">Cold &amp; Snowy</option>
+
        </select>
 
        <label for="activities">Which activity appeals to you the most?</label>
        <select id="activities">
-         <option value="adrenaline">Hang Gliding</option>
-         <option value="hiking">Hiking through a Scenic Area</option>
-         <option value="festival">Attending a Festival</option>
+         <option value="sum1">Hiking through a Scenic Area</option>
+         <option value="sum2">Hang Gliding</option>
+         <option value="sum3">Attending a Festival</option>
        </select>
 
        <label for="budget">How much are you willing to spend?</label>
        <select id="budget">
-         <option value="highCost">$$$</option>
-         <option value="midCost">$$</option>
-         <option value="lowCost">$</option>
+         <option value="sum1">$$$</option>
+         <option value="sum2">$$</option>
+         <option value="sum3">$</option>
        </select>
 
        <label for="relaxation">How relaxing do you want your vacation to be?</label>
        <select id="relaxation">
-         <option value="highRelax">Never life a finger</option>
-         <option value="lowRelax">Go, go ,go</option>
-         <option value="midRelax">Middle/Don't Care</option>
+         <option value="sum1">Never lift a finger</option>
+         <option value="sum2">Go, go ,go</option>
+         <option value="sum3">Middle/Don't Care</option>
+
        </select>
 
        <label for="culture">What type of culture are you looking for?</label>
        <select id="culture">
-         <option value="western">Familiar (Western)</option>
-         <option value="eastern">Different Culture</option>
-         <option value="eitherCulture">Middle/Don't Care</option>
-       </select>
+         <option value="sum1">Familiar (Western)</option>
+         <option value="sum2">Middle/Don't Care</option>
+         <option value="sum3">Different Culture</option>
+
+       </select> --->
 
        <button type="submit" class="btn">Find my perfect vacation destination!</button>
      </form>
