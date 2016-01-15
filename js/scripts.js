@@ -1,23 +1,42 @@
 
 $(document).ready(function() {
   $("form#vacation").submit(function(event) {
-    var weatherInput = $("input#weather").val();
-    var activitiesInput = $("select#activities").val();
+   var weatherInput = $("select#weather").val();
+    var activityInput = $("select#activity").val();
     var budgetInput = $("select#budget").val();
-    var relaxationInput = $("select#relaxation").val();
+    var relaxInput = $("select#relax").val();
     var cultureInput = $("select#culture").val();
 
-    if ("sum1" > "sum2" && "sum1" > "sum3" && "sum2" >= "sum3") {
-        var vacationMatch = "Sun";
-  //  if (VarInput === >7 <12) {
-  //     var vacationMatch = "Snow";
-  //  if (VarInput === >11 <16) {
-  //      var vacationMatch = "Mid";
-
+    if (weatherInput=== "weather1" && relaxInput=== "activity" && budgetInput=== "budget1") {
+      var vacationmatch = "A";
+    }
+    if (weatherInput=== "weather1" && relaxInput=== "activity"   && budgetInput=== "budget2") {
+      var vacationmatch = "B";
+    }
+    if (weatherInput=== "weather1" && relaxInput=== "activity" && budgetInput=== "budget2") {
+      var vacationmatch = "C";
+    }
+    if (weatherInput=== "weather2" && relaxInput=== "activity" && budgetInput=== "budget2") {
+      var vacationmatch = "D";
+    }
+    if (weatherInput=== "weather2" && relaxInput=== "activity" && budgetInput=== "budget2") {
+      var vacationmatch = "E";
+    }
+    if (weatherInput=== "weather2" && relaxInput=== "activity" && budgetInput=== "budget1") {
+      var vacationmatch = "F";
+    }
+    if (weatherInput=== "weather2" && relaxInput=== "activity" && budgetInput=== "budget1") {
+      var vacationmatch = "G";
+    }
+    if (weatherInput=== "weather1" && relaxInput=== "activity" && budgetInput=== "budget1") {
+      var vacationmatch = "H";
+    }
 
     $("span#match").text(vacationmatch);
     $("#vacationmatch").show();
 
     event.preventDefault();
+
+
   });
 });
