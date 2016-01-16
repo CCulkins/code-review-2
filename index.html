@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <title>Vacation Generator</title>
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/styles.css">
-     <script src="js/jquery-1.12.0.min.js"></script>
-     <script src="js/scripts.js"></script>
-   </head>
+    <title>Vacation Generator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
 
   <body>
     <div class="container">
       <div class="jumbotron">
-     <h1>
-  <span class="glyphicon glyphicon-plane"></span> Find your perfect vacation!</h1>
+        <h1><span class="glyphicon glyphicon-plane"></span> Find your perfect vacation!</h1>
 
-     <p>Please fill out this form to find out which vacation destination is the
-       best fit for you! <br><strong>Just pull down the drop-down menus for each question, and
-       choose the answer that best suits your vacation needs.</strong></p>
-</div>
-<div class"container">
-     <form id="vacation">
+        <p>Please fill out this form to find out which vacation destination is the
+        best fit for you! <br><strong>Just pull down the drop-down menus for each question, and
+        choose the answer that best suits your vacation needs.</strong></p>
+      </div>
+    <div class"container">
+      <form id="vacation">
+        <div class="row">
+          <div class="col-sm-3"
+            <label for="weather"><span class="glyphicon glyphicon-cloud"></span> What type of weather would you prefer?</label><br>
+            <select id="weather">
+              <option value="pick">-Pick One-</option>
+              <option value="weather1" sum:>Warm &amp; Sunny</option>
+              <option value="weather2">Cold &amp; Snowy</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"
+            <label for="activity"><br><span class="glyphicon glyphicon-glass"></span> Which activity appeals to you the most?</label><br>
+              <select id="activity">
+                <option value="pick">-Pick One-</option>
+                <option value="activity1">Hiking through a Scenic Area</option>
+                <option value="activity2">Hang Gliding</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"
+            <label for="budget"><br><span class="glyphicon glyphicon-piggy-bank"></span> How much are you willing to spend?</label><br>
+              <select id="budget">
+                <option value="pick">-Pick One-</option>
+                <option value="budget1">$$$</option>
+                <option value="budget2">$</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"
+            <label for="relax"><br><span class="glyphicon glyphicon-sunglasses"></span> How relaxing do you want your vacation to be?</label><br>
+              <select id="relax">
+                <option value="pick">-Pick One-</option>
+                <option value="relax1">Never lift a finger</option>
+                <option value="relax2">Go, go ,go</option>
+              </select>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"
+            <label for="culture"><br><span class="glyphicon glyphicon-tent"></span> What type of culture are you looking for?</label><br>
+              <select id="culture">
+                <option value="pick">-Pick One-</option>
+                <option value="culture1">Familiar (Western)</option>
+                <option value="culture2">Different Culture</option>
+              </select>
+          </div>
+        </div>
+      </form>
 
-<div class="row">
-  <div class="col-sm-3"
-       <label for="weather"><span class="glyphicon glyphicon-cloud"></span> What type of weather would you prefer?</label><br>
-       <select id="weather">
-         <option value="pick">-Pick One-</option>
-         <option value="weather1" sum:>Warm &amp; Sunny</option>
-         <option value="weather2">Cold &amp; Snowy</option>
+      <button type="submit" class="btn"><br>Find my perfect vacation destination!</button>
 
-       </select>
-</div>
-</div>
-<div class="row">
-    <div class="col-sm-3"
-       <label for="activity"><br><span class="glyphicon glyphicon-glass"></span> Which activity appeals to you the most?</label><br>
-       <select id="activity">
-         <option value="pick">-Pick One-</option>
-         <option value="activity1">Hiking through a Scenic Area</option>
-         <option value="activity2">Hang Gliding</option>
-       </select>
-</div>
-</div>
-<div class="row">
-  <div class="col-sm-3"
-       <label for="budget"><br><span class="glyphicon glyphicon-piggy-bank"></span> How much are you willing to spend?</label><br>
-       <select id="budget">
-         <option value="pick">-Pick One-</option>
-         <option value="budget1">$$$</option>
-         <option value="budget2">$</option>
-       </select>
-     </div>
-</div>
-<div class="row">
-    <div class="col-sm-3"
-       <label for="relax"><br><span class="glyphicon glyphicon-sunglasses"></span> How relaxing do you want your vacation to be?</label><br>
-       <select id="relax">
-         <option value="pick">-Pick One-</option>
-         <option value="relax1">Never lift a finger</option>
-         <option value="relax2">Go, go ,go</option>
-
-       </select>
-     </div>
-   </div>
-<div class="row">
-    <div class="col-sm-3"
-       <label for="culture"><br><span class="glyphicon glyphicon-tent"></span> What type of culture are you looking for?</label><br>
-       <select id="culture">
-         <option value="pick">-Pick One-</option>
-         <option value="culture1">Familiar (Western)</option>
-         <option value="culture2">Different Culture</option>
-</select>
-</div>
-</form>
-<button type="submit" class="btn"><br>Find my perfect vacation destination!</button>
-
-
-
-     <div class="row">
-         <div class="col-sm-3"
-     <div id="vacationmatch">
-       <p><span id="match"></span></p>
-     </div>
-   </div>
-     </div>
+      <div class="row">
+        <div class="col-sm-3"
+          <div id="vacationmatch">
+            <p><span id="match"></span></p>
+          </div>
+        </div>
+      </div>
 
    </div>
   </body>
-
-
 </html>
 <!-- Oh, dear...
        <label for="weatherQ">What type of weather would you prefer?</label>

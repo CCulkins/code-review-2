@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $("form#vacation").submit(function(event) {
-   var weatherInput = $("select#weather").val();
+    var weatherInput = $("select#weather").val();
     var activityInput = $("select#activity").val();
     var budgetInput = $("select#budget").val();
     var relaxInput = $("select#relax").val();
