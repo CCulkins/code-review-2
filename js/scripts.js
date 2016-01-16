@@ -8,28 +8,28 @@ $(document).ready(function() {
     var cultureInput = $("select#culture").val();
 
     if (weatherInput=== "weather1" && activityInput=== "activity1" && budgetInput=== "budget1") {
-      var vacationmatch = "A";
+      var vacationmatch = "Tazmania, Australia is the vacation destination for you!";
     }
     if (weatherInput=== "weather1" && activityInput=== "activity1" && budgetInput=== "budget2") {
-      var vacationmatch = "B";
+      var vacationmatch = "Sedona, Arizona is the vacation destination for you!";
     }
     if (weatherInput=== "weather1" && activityInput=== "activity2" && budgetInput=== "budget2") {
-      var vacationmatch = "C";
+      var vacationmatch = "Orlando, Florida is the vacation destination for you!";
     }
     if (weatherInput=== "weather2" && activityInput=== "activity1" && budgetInput=== "budget2") {
-      var vacationmatch = "D";
+      var vacationmatch = "Valdez, Alaska is the vacation destination for you!";
     }
     if (weatherInput=== "weather2" && activityInput=== "activity2" && budgetInput=== "budget2") {
-      var vacationmatch = "E";
+      var vacationmatch = "Bend, Oregon is the vacation destination for you!";
     }
     if (weatherInput=== "weather2" && activityInput=== "activity1" && budgetInput=== "budget1") {
-      var vacationmatch = "F";
+      var vacationmatch = "Garmisch-Partenkirchen, Germany is the vacation destination for you!";
     }
     if (weatherInput=== "weather2" && activityInput=== "activity2" && budgetInput=== "budget1") {
-      var vacationmatch = "G";
+      var vacationmatch = "Queenstown, New Zealand is the vacation destination for you!";
     }
     if (weatherInput=== "weather1" && activityInput=== "activity2" && budgetInput=== "budget1") {
-      var vacationmatch = "H";
+      var vacationmatch = "Rio De Janeiro, Brazil is the vacation destination for you!";
     }
 
     $("span#match").text(vacationmatch);
